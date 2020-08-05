@@ -1,0 +1,87 @@
+$selectedBlue: #15b655;
+
+body {
+  margin: 0;
+  background: #e2e1e0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+.card-selection-grid {
+  display: flex;
+}
+
+.card-selecton-grid__suit {
+  border-right: 1px solid #cdcdcd;
+  padding: 0px 0px 0px 9px;
+  margin-top: 15px;
+  display: flex;
+
+  &--red {
+    color: red;
+  }
+}
+.card-selecton-grid__suit:last-of-type {
+  border-right: none;
+}
+.card-selection-grid__card {
+  font-size: 14px;
+  user-select: none;
+  border: 2px solid #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  width: 28px;
+  margin: 9px 9px 0 0;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &--selected,
+  &--selected:hover {
+    border: 2px solid $selectedBlue;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    background: #f3f3f3;
+    border: 2px solid #f3f3f3;
+    cursor: not-allowed;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+}
+
+.card-selection-grid__card__suit-and-rank {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 2px;
+}
+
+.card-selection-grid__card__selected-marker {
+  background: $selectedBlue;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+  padding: 1px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.suit-display-card {
+  height: 44px;
+  width: 32px;
+  margin: 9px 9px 0 0;
+  text-align: center;
+  font-size: 35px;
+  overflow: hidden;
+}
