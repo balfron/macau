@@ -20,10 +20,6 @@ export type ProcessedCardData = {
 };
 
 export type Solution = {
-  pyramid: {
-    bottom: number[];
-    middle: number[];
-    top: number[];
-  };
+  pyramid: number[][];
   score: number;
 };

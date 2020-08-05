@@ -30,9 +30,9 @@ export const SolutionDisplay = (props: SolutionDisplayProps) => {
         Score: {props.solution.score}
       </div>
       <div className="solution-display__pyramid">
-        <div>{renderSolutionRow(props.solution.pyramid.top)}</div>
-        <div>{renderSolutionRow(props.solution.pyramid.middle)}</div>
-        <div>{renderSolutionRow(props.solution.pyramid.bottom)}</div>
+        <div>{renderSolutionRow(props.solution.pyramid[2])}</div>
+        <div>{renderSolutionRow(props.solution.pyramid[1])}</div>
+        <div>{renderSolutionRow(props.solution.pyramid[0])}</div>
       </div>
     </div>
   );

@@ -5,11 +5,11 @@ import { Solution } from "./types";
 import { SolutionDisplay } from "./components/solution-display";
 
 // const mockSolution: Solution = {
-//   pyramid: {
-//     bottom: [1, 3, 5, 8],
-//     middle: [12, 15, 16, 18, 4],
-//     top: [32, 35, 37],
-//   },
+//   pyramid: [
+//     [1, 3, 5, 8],
+//     [12, 15, 16, 18, 4],
+//     [32, 35, 37],
+//   ],
 //   score: 12,
 // };
 
