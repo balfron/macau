@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/macau/static/css/main.04cce326.chunk.css",
-    "main.js": "/macau/static/js/main.74253c59.chunk.js",
-    "main.js.map": "/macau/static/js/main.74253c59.chunk.js.map",
+    "main.js": "/macau/static/js/main.90fdf0b3.chunk.js",
+    "main.js.map": "/macau/static/js/main.90fdf0b3.chunk.js.map",
     "runtime-main.js": "/macau/static/js/runtime-main.125f7b21.js",
     "runtime-main.js.map": "/macau/static/js/runtime-main.125f7b21.js.map",
     "static/js/2.b927cafa.chunk.js": "/macau/static/js/2.b927cafa.chunk.js",
     "static/js/2.b927cafa.chunk.js.map": "/macau/static/js/2.b927cafa.chunk.js.map",
     "index.html": "/macau/index.html",
-    "precache-manifest.e33be2d80ad5ac0ce3f7b9432d785ed3.js": "/macau/precache-manifest.e33be2d80ad5ac0ce3f7b9432d785ed3.js",
+    "precache-manifest.9c0da6f8ef22f9d9b168e5d866a1fedd.js": "/macau/precache-manifest.9c0da6f8ef22f9d9b168e5d866a1fedd.js",
     "service-worker.js": "/macau/service-worker.js",
     "static/css/main.04cce326.chunk.css.map": "/macau/static/css/main.04cce326.chunk.css.map",
     "static/js/2.b927cafa.chunk.js.LICENSE.txt": "/macau/static/js/2.b927cafa.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.125f7b21.js",
     "static/js/2.b927cafa.chunk.js",
     "static/css/main.04cce326.chunk.css",
-    "static/js/main.74253c59.chunk.js"
+    "static/js/main.90fdf0b3.chunk.js"
   ]
 }
