@@ -25,12 +25,11 @@ function App() {
       setFetchInProgress(true);
       const response = await fetch("https://fantasysolver.herokuapp.com/", {
         method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: new Headers({ "content-type": "application/json" }),
         body: JSON.stringify(bodyData),
       });
+
+      console.log(response);
       const solution = await response.json();
       console.log(solution);
       setSolution(solution);
