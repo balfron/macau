@@ -29,9 +29,7 @@ function App() {
         body: JSON.stringify(bodyData),
       });
 
-      console.log(response);
       const solution = await response.json();
-      console.log(solution);
       setSolution(solution);
       setFetchInProgress(false);
     } catch (e) {
