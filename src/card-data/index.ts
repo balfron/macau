@@ -1,4 +1,4 @@
-import { Suit, Rank } from "../types";
+import { Suit, Rank, ProcessedCardData } from "../types";
 
 export interface CardData {
   [key: number]: { suit: Suit; rank: Rank };
@@ -6,7 +6,6 @@ export interface CardData {
 
 const suits: Suit[] = ["C", "D", "H", "S"];
 const ranks: Rank[] = [
-  "A",
   "2",
   "3",
   "4",
@@ -19,15 +18,27 @@ const ranks: Rank[] = [
   "J",
   "Q",
   "K",
+  "A",
 ];
 
 let counter = 0;
 
+const suitsDict: { [k: string]: ProcessedCardData[] } = {
+  C: [],
+  H: [],
+  S: [],
+  D: [],
+};
+
 const data: CardData = {};
-suits.forEach((s) =>
-  ranks.forEach((r) => {
+ranks.forEach((r) =>
+  suits.forEach((s) => {
     data[counter] = { suit: s, rank: r };
+
+    suitsDict[s].push({ id: counter, rank: r });
     counter++;
   })
 );
-export const cardData = data;
+
+export const cardData = data; // data format suitable for quick lookup from response
+export const suitsData = suitsDict; // data format suitable for producing UI

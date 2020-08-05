@@ -7,7 +7,7 @@ export interface CardProps {
   rank: Rank;
   id: number;
   isDisabled: boolean;
-  onClick: (id: number) => void;
+  onClick?: (id: number) => void;
 }
 
 const SuitToSymbol = (suit: Suit): JSX.Element => {
@@ -29,8 +29,13 @@ export const Card = (props: CardProps) => {
   classes += props.isSelected ? " card-selection-grid__card--selected" : "";
   classes += props.isDisabled ? " card-selection-grid__card--disabled" : "";
 
+  classes +=
+    props.suit === "H" || props.suit === "D"
+      ? " card-selection-grid__card--red"
+      : "";
+
   const handleClick = () => {
-    props.onClick(props.id);
+    if (props.onClick) props.onClick(props.id);
   };
 
   return (

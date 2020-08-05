@@ -18,3 +18,12 @@ export type ProcessedCardData = {
   id: number;
   rank: Rank;
 };
+
+export type Solution = {
+  pyramid: {
+    bottom: number[];
+    middle: number[];
+    top: number[];
+  };
+  score: number;
+};

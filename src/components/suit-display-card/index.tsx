@@ -18,5 +18,8 @@ const SuitToSymbol = (suit: Suit): JSX.Element => {
   }
 };
 export const SuitDisplayCard = (props: SuitDisplayCardProps) => {
-  return <div className="suit-display-card">{SuitToSymbol(props.suit)}</div>;
+  let classes = "suit-display-card";
+  classes +=
+    props.suit === "H" || props.suit === "D" ? " suit-display-card--red" : "";
+  return <div className={classes}>{SuitToSymbol(props.suit)}</div>;
 };

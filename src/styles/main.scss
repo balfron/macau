@@ -5,12 +5,25 @@ body {
   background: #e2e1e0;
 }
 
-.app-container {
+.container-common {
+  width: 360px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
 }
+
 .card-selection-grid {
-  display: flex;
+  @extend .container-common;
+}
+
+.control-panel {
+  @extend .container-common;
+  justify-content: center;
+  margin-top: 30px;
+  button {
+    margin-left: 9px;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
 }
 
 .card-selecton-grid__suit {
@@ -18,10 +31,6 @@ body {
   padding: 0px 0px 0px 9px;
   margin-top: 15px;
   display: flex;
-
-  &--red {
-    color: red;
-  }
 }
 .card-selecton-grid__suit:last-of-type {
   border-right: none;
@@ -40,6 +49,10 @@ body {
   background: #fff;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  &--red {
+    color: red;
+  }
 
   &:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -84,4 +97,32 @@ body {
   text-align: center;
   font-size: 35px;
   overflow: hidden;
+  &--red {
+    color: red;
+  }
+}
+
+.solution-display {
+  @extend .container-common;
+  flex-direction: column;
+  margin-top: 30px;
+  border-top: 1px solid #cdcdcd;
+  padding-top: 20px;
+}
+
+.solution-display__score {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.solution-display__pyramid {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  .card-selection-grid__card {
+    cursor: default;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
 }
