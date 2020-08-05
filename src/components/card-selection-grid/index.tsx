@@ -8,7 +8,7 @@ export interface CardSelectionGridProps {
   solve: (selection: number[]) => void;
   fetchInProgress: boolean;
 }
-const s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+// const s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 export const CardSelectionGrid = (props: CardSelectionGridProps) => {
   const [selected, setSelected] = React.useState<number[]>(s);
 
