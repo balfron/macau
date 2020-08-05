@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/macau/static/css/main.6c984903.chunk.css",
+    "main.js": "/macau/static/js/main.20858c93.chunk.js",
+    "main.js.map": "/macau/static/js/main.20858c93.chunk.js.map",
+    "runtime-main.js": "/macau/static/js/runtime-main.125f7b21.js",
+    "runtime-main.js.map": "/macau/static/js/runtime-main.125f7b21.js.map",
+    "static/js/2.79a02463.chunk.js": "/macau/static/js/2.79a02463.chunk.js",
+    "static/js/2.79a02463.chunk.js.map": "/macau/static/js/2.79a02463.chunk.js.map",
+    "index.html": "/macau/index.html",
+    "precache-manifest.d92bb94938423113a525bd69068630d0.js": "/macau/precache-manifest.d92bb94938423113a525bd69068630d0.js",
+    "service-worker.js": "/macau/service-worker.js",
+    "static/css/main.6c984903.chunk.css.map": "/macau/static/css/main.6c984903.chunk.css.map",
+    "static/js/2.79a02463.chunk.js.LICENSE.txt": "/macau/static/js/2.79a02463.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.125f7b21.js",
+    "static/js/2.79a02463.chunk.js",
+    "static/css/main.6c984903.chunk.css",
+    "static/js/main.20858c93.chunk.js"
+  ]
+}
