@@ -21,7 +21,7 @@ const ranks: Rank[] = [
   "A",
 ];
 
-let counter = 0;
+let counter = 1;
 
 const suitsDict: { [k: string]: ProcessedCardData[] } = {
   C: [],

@@ -23,7 +23,6 @@ const renderSolutionRow = (row: number[]) => {
   });
 };
 export const SolutionDisplay = (props: SolutionDisplayProps) => {
-  console.log(props.solution);
   return (
     <div className="solution-display">
       <div className="solution-display__score">

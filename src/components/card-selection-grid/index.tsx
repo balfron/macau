@@ -19,7 +19,7 @@ export const CardSelectionGrid = (props: CardSelectionGridProps) => {
       newSelected = selected.filter((i) => i !== id);
 
       setSelected(newSelected);
-    } else if (selected.length < 13) {
+    } else if (selected.length < 14) {
       newSelected = [...selected, id];
       setSelected(newSelected);
     }
@@ -49,7 +49,7 @@ export const CardSelectionGrid = (props: CardSelectionGridProps) => {
                     rank={card.rank}
                     isSelected={selected.includes(card.id)}
                     isDisabled={
-                      !selected.includes(card.id) && selected.length === 13
+                      !selected.includes(card.id) && selected.length === 14
                     }
                     onClick={toggleSelected}
                   />
@@ -64,7 +64,7 @@ export const CardSelectionGrid = (props: CardSelectionGridProps) => {
                     rank={card.rank}
                     isSelected={selected.includes(card.id)}
                     isDisabled={
-                      !selected.includes(card.id) && selected.length === 13
+                      !selected.includes(card.id) && selected.length === 14
                     }
                     onClick={toggleSelected}
                   />
@@ -73,7 +73,9 @@ export const CardSelectionGrid = (props: CardSelectionGridProps) => {
             </div>
           );
         })}
+        {props.fetchInProgress && <span className="loading-screen"></span>}
       </div>
+
       <div className="control-panel">
         <button
           disabled={selected.length === 0 || props.fetchInProgress}
@@ -82,12 +84,23 @@ export const CardSelectionGrid = (props: CardSelectionGridProps) => {
           Clear
         </button>
         <button
-          disabled={selected.length !== 13 || props.fetchInProgress}
+          disabled={
+            (selected.length !== 13 && selected.length !== 14) ||
+            props.fetchInProgress
+          }
           onClick={solveSolution}
         >
-          {props.fetchInProgress ? "Solving..." : "Solve"}
+          Solve
         </button>
       </div>
+      {props.fetchInProgress && (
+        <div className="control-panel">
+          <div className="loader"></div> &nbsp;
+          <div style={{ fontSize: "23px", fontWeight: "bold", color: "#666" }}>
+            Solving
+          </div>
+        </div>
+      )}
     </>
   );
 };

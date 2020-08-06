@@ -14,7 +14,8 @@ import { SolutionDisplay } from "./components/solution-display";
 // };
 
 function App() {
-  const [solution, setSolution] = React.useState<Solution | null>();
+  const [solution, setSolution] = React.useState<Solution | null>(null);
+  const [error, setError] = React.useState<string | null>(null);
   const [fetchInProgress, setFetchInProgress] = React.useState<boolean>(false);
   const fetchSolution = async (selected: number[]) => {
     const bodyData = {
@@ -32,8 +33,10 @@ function App() {
       const solution = await response.json();
       setSolution(solution);
       setFetchInProgress(false);
+      setError(null);
     } catch (e) {
       console.error(e);
+      setError(e.toString());
       setFetchInProgress(false);
     }
   };
@@ -44,6 +47,11 @@ function App() {
         fetchInProgress={fetchInProgress}
       />
       {solution && <SolutionDisplay solution={solution} />}
+      {error && (
+        <div className="error-container">
+          {error}. Please see console for full details.
+        </div>
+      )}
     </div>
   );
 }
