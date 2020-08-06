@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/macau/static/css/main.04cce326.chunk.css",
-    "main.js": "/macau/static/js/main.41bf36bb.chunk.js",
-    "main.js.map": "/macau/static/js/main.41bf36bb.chunk.js.map",
+    "main.css": "/macau/static/css/main.a65de65b.chunk.css",
+    "main.js": "/macau/static/js/main.fc615b80.chunk.js",
+    "main.js.map": "/macau/static/js/main.fc615b80.chunk.js.map",
     "runtime-main.js": "/macau/static/js/runtime-main.125f7b21.js",
     "runtime-main.js.map": "/macau/static/js/runtime-main.125f7b21.js.map",
-    "static/js/2.b927cafa.chunk.js": "/macau/static/js/2.b927cafa.chunk.js",
-    "static/js/2.b927cafa.chunk.js.map": "/macau/static/js/2.b927cafa.chunk.js.map",
+    "static/js/2.3192e051.chunk.js": "/macau/static/js/2.3192e051.chunk.js",
+    "static/js/2.3192e051.chunk.js.map": "/macau/static/js/2.3192e051.chunk.js.map",
     "index.html": "/macau/index.html",
-    "precache-manifest.56101e97ed413408d19c6b05d8649c08.js": "/macau/precache-manifest.56101e97ed413408d19c6b05d8649c08.js",
+    "precache-manifest.86ff9876e2673af216251c972d223590.js": "/macau/precache-manifest.86ff9876e2673af216251c972d223590.js",
     "service-worker.js": "/macau/service-worker.js",
-    "static/css/main.04cce326.chunk.css.map": "/macau/static/css/main.04cce326.chunk.css.map",
-    "static/js/2.b927cafa.chunk.js.LICENSE.txt": "/macau/static/js/2.b927cafa.chunk.js.LICENSE.txt"
+    "static/css/main.a65de65b.chunk.css.map": "/macau/static/css/main.a65de65b.chunk.css.map",
+    "static/js/2.3192e051.chunk.js.LICENSE.txt": "/macau/static/js/2.3192e051.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.125f7b21.js",
-    "static/js/2.b927cafa.chunk.js",
-    "static/css/main.04cce326.chunk.css",
-    "static/js/main.41bf36bb.chunk.js"
+    "static/js/2.3192e051.chunk.js",
+    "static/css/main.a65de65b.chunk.css",
+    "static/js/main.fc615b80.chunk.js"
   ]
 }
