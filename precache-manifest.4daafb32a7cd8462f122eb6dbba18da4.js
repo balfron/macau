@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "900e436040b04a033187ad7833663909",
+    "revision": "c284b30665409a1ad8e957880065ca7d",
     "url": "/macau/index.html"
   },
   {
